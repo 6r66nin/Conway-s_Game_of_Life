@@ -1,0 +1,168 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+
+    background-color: #1a1a1a;
+
+    display: flex;
+
+    height: 100vh;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.sidebar{
+
+    width: 300px;
+    padding: 25px;
+    background: #2d2d2d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.gridcontrol{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+
+}
+
+.gridcontrol label{
+
+    font-size: medium;
+
+}
+
+.gridcontrol span{
+
+    font-weight: bold;
+    color: rgb(34, 119, 231);
+
+}
+
+
+
+.gamebuttons{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.controlbtn{
+
+    display: flex;
+    justify-content: center;
+    padding: 12px;   
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.295);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    
+}
+
+.controlbtn.pressed{
+
+    transform: translateY(1px) scale(0.95);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.295);
+}
+
+
+.controlbtn.disable{
+
+    background-color: #1a1a1a;
+    opacity: 0.5;
+    box-shadow: 0;
+}
+
+#rngbtn{
+
+    background-color: #1455cc;
+
+
+}
+#playbtn{
+
+    background-color: #06a520;
+    transition: background-color 0.2s ease-in-out;
+
+}
+
+#playbtn.stopbtn{
+
+    background-color: #a50606;
+
+}
+
+
+#restartbtn{
+
+    background-color: #d89925;
+
+
+}
+
+
+.maincontent{
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.gridcontainer{
+
+
+    display: grid;
+    width: 60%;
+    height: 90%;
+    grid-template-rows: repeat(var(10), 1fr);
+    grid-template-columns: repeat(var(10), 1fr);
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.cell{
+
+    background-color: white;
+    border: 1px solid #1a1a1a;
+
+    transition: background-color 0.2s ease;
+
+}
+
+.cell.active{
+
+    background-color: black;
+
+
+}
+
+

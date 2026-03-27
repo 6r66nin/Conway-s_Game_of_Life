@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Life Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="sidebar">
+
+        <h2>Controls</h2>
+
+        <div class="gridcontrol">
+            
+            <label>Grid size:</label>
+            <input id = "gridsizeinput" type="range" min="10" max="45" value="10">
+            <span id="sizespan">10 x 10</span>
+            
+            <label>Random size:</label>
+            <input id = "rnginput" type="range" min="25" max="60" value="25">
+            <span id="rngspan">25</span>
+            
+            <label>Evolution speed:</label>
+            <input id="speedinput" type="range" min="100" max="2000" value="500">
+            <span id="speedspan">500ms</span>
+
+        </div>
+
+        <hr>
+
+
+        <div class="gamebuttons">
+
+            <button id= "rngbtn" class="controlbtn">Random</button>
+            <button id= "playbtn" class="controlbtn">▶ Play</button>
+            <button id= "restartbtn" class="controlbtn">Restart</button>
+
+        </div>
+
+
+    </div>
+
+    <div class="maincontent">
+
+        <div id = "grid" class="gridcontainer" id="grid">
+          
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
